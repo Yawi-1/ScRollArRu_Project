@@ -51,7 +51,7 @@ An e-commerce platform built using React and Firebase. This platform allows user
 ## Live Demo
 
 Check out the live demo of the e-commerce website here:
-[Live Demo Link]([https://your-live-demo-link.com](https://scrollar4u.netlify.app/))
+[Live Demo Link](https://scrollar4u.netlify.app/)
 
 ## Admin Panel
 - The admin panel is accessible only to authenticated users with admin privileges.
