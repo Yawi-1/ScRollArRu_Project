@@ -22,7 +22,7 @@ An e-commerce platform built using React and Firebase. This platform allows user
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/ecommerce-react-firebase.git
+    [git clone https://github.com/yourusername/ecommerce-react-firebase.git](https://github.com/Yawi-1/ScRollArRu_Project.git)
     ```
 
 2. Navigate into the project directory:
@@ -51,7 +51,7 @@ An e-commerce platform built using React and Firebase. This platform allows user
 ## Live Demo
 
 Check out the live demo of the e-commerce website here:
-[Live Demo Link](https://your-live-demo-link.com)
+[Live Demo Link]([https://your-live-demo-link.com](https://scrollar4u.netlify.app/))
 
 ## Admin Panel
 - The admin panel is accessible only to authenticated users with admin privileges.
