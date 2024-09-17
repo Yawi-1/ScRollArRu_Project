@@ -97,6 +97,7 @@ export default function Login() {
             setTimeout(() => { navigate("/") }, 1000);
           }).catch((err) => {
             setLoading(false);
+            console.log(err)
             toast.error("An error occured !!!");
           });
 
@@ -118,19 +119,19 @@ export default function Login() {
 
   function signInWithFacebook() {
     // ---------------------------------- Sign up ----------------------------------
+    setLoading(true);
     signInWithPopup(auth, facebookProvider).then((user) => {
 
       // ---------------------------------- Checking if account exists ----------------------------------
-      setLoading(true);
       getDocs(query(userRef, where("email", "==", user.user.email))).then((result) => {
         if (result.docs.length == 0) {
 
           // ---------------------------------- Storing user data ----------------------------------
           addDoc(userRef, { name: user.user.displayName, email: user.user.email, phone: "", isPhoneVerified : false, address: "", landmark: "", pincode: "", city: "", state: "", createdAt: new Date().toLocaleString() }).then(() => {
-            setLoading(false);
             localStorage.setItem("user", JSON.stringify(user));
             toast.success("Account created successfully !!!");
-            setTimeout(() => { navigate("/") }, 1000);
+            setLoading(false);
+            setTimeout(() => { navigate("/") }, 500);
           }).catch((err) => {
             setLoading(false);
             toast.error("An error occured !!!");

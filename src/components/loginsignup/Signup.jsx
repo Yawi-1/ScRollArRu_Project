@@ -85,7 +85,7 @@ export default function Signup() {
       if (result.docs.length > 0) {
         // ---------------------------------- If account exists then sign up ----------------------------------
         toast.info("Your account already exists, please login !!!");
-        setTimeout(() => { navigate("/login") }, 1000);
+        setTimeout(() => { navigate("/login") }, 500);
         return;
       } else {
         // ---------------------------------- Authentcating user ----------------------------------
@@ -115,19 +115,19 @@ export default function Signup() {
 
   function signInWithGoogle() {
     // ---------------------------------- Sign up ----------------------------------
+    setLoading(true);
     signInWithPopup(auth, googleProvider).then((user) => {
 
       // ---------------------------------- Checking if account exists ----------------------------------
-      setLoading(true);
       getDocs(query(userRef, where("email", "==", user.user.email))).then((result) => {
         if (result.docs.length == 0) {
 
           // ---------------------------------- Storing user data ----------------------------------
           addDoc(userRef, { ...newUser, email: user.user.email, name: user.user.displayName, createdAt: new Date().toLocaleString() }).then(() => {
-            setLoading(false);
             localStorage.setItem("user", JSON.stringify(user));
             toast.success("Account created successfully !!!");
-            setTimeout(() => { navigate("/") }, 1000);
+            setTimeout(() => { navigate("/") }, 500);
+            setLoading(false);
           }).catch((err) => {
             setLoading(false);
             toast.error("An error occured !!!");

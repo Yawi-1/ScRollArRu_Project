@@ -6,7 +6,7 @@ import Layout from '../../components/layout/Layout';
 export default function NoPage() {
   return (
     <Layout>
-      <section className="relative z-10 bg-primary py-[120px]">
+      <section className="relative z-10 bg-primary py-[121px]">
         <div className="container mx-auto">
           <div className="-mx-4 flex">
             <div className="w-full px-4">
