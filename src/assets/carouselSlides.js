@@ -1,3 +1,6 @@
-export default ['/image.png', 
-                '/image.png', 
-                '/carousal.png'];
+export default ['/books.webp', 
+                '/earthBook.webp', 
+                '/dragon.webp',
+                '/jurassic.webp',
+                '/wondersBody.webp'
+            ];

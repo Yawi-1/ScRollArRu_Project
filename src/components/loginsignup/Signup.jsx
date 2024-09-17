@@ -203,7 +203,9 @@ export default function Signup() {
       {loading && (<Spinner />)}
       <div className="bg-white w-full h-screen lg:w-1/3 lg:h-[90%] flex flex-col items-center justify-center rounded-lg p-12">
 
+ <Link to='/'>
         <img src={logo} alt="company logo" className="mt-2 cursor-pointer w-16" />
+ </Link>
         <h1 className="text-2xl font-bold p-2">Create an Account</h1>
 
         <div className="w-full flex flex-col">

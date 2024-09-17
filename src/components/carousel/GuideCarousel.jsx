@@ -72,15 +72,15 @@ export default function GuideCarousel() {
           <div className='relative mx-auto w-3/4 h-8 border-black dark:border-white border-b-2'>
             {/*--------------- Button 1 --------------*/}
             <div
-              className="absolute text-black text-xl font-medium w-14 h-14  bg-white rounded-full flex justify-center items-center border border-black  bg-green-100" onClick={setPreviousSlide} style={{ left: '-11%' }}>
+              className="absolute text-black text-xl font-medium w-14 h-14  rounded-full flex justify-center items-center border border-black  bg-green-100" onClick={setPreviousSlide} style={{ left: '-11%' }}>
               {currentSlide === 0 ? '10' : currentSlide}
             </div>
             {/*--------------- Button 2 ---------------*/}
-            <div className="absolute text-black text-xl font-semibold w-14 h-14 bg-white rounded-full flex justify-center items-center border border-black bg-yellow-200 dark:bg-cyan-200" style={{ right: '38%'}}>
+            <div className="absolute text-black text-xl font-semibold w-14 h-14  rounded-full flex justify-center items-center border border-black bg-yellow-200 dark:bg-cyan-200" style={{ right: '38%'}}>
               {currentSlide + 1}
             </div>
             {/*--------------- Button 3 ---------------*/}
-            <div className="absolute text-black text-xl font-medium w-14 h-14 bg-white rounded-full flex justify-center items-center border border-black bg-green-100" onClick={setNextSlide} style={{ right: '-11%' }}>
+            <div className="absolute text-black text-xl font-medium w-14 h-14  rounded-full flex justify-center items-center border border-black bg-green-100" onClick={setNextSlide} style={{ right: '-11%' }}>
               {currentSlide === 9 ? '1' : currentSlide + 2}
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function GuideCarousel() {
         </div>
 
         {/* ----------------------------------------------------- md and lg ----------------------------------------------- */}
-        <div className="hidden md:block flex justify-center items-center w-full mx-auto ">
+        <div className="hidden md:block  justify-center items-center w-full mx-auto ">
 
           {/* images  */}
           <div className='h-3/4 w-1/4 bg-white'>

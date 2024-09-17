@@ -1,7 +1,7 @@
 // ---------------------------------- Assets ----------------------------------
-const images = [{ id: 1, src: 'https://via.placeholder.com/400x300?text=Image+1', alt: 'Image 1' },
-                { id: 2, src: 'https://via.placeholder.com/400x300?text=Image+2', alt: 'Image 2' }, 
-                { id: 3, src: 'https://via.placeholder.com/400x300?text=Image+3', alt: 'Image 3' }];
+const images = [{ id: 1, src: '/public/wondersBody.webp', alt: 'Image 1' },
+                { id: 2, src: '/public/jurassic.webp', alt: 'Image 2' }, 
+                { id: 3, src: '/public/earthBook.webp', alt: 'Image 3' }];
 
 
 // ---------------------------------- Categories Component Code ----------------------------------

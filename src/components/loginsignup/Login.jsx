@@ -170,7 +170,9 @@ export default function Login() {
     <div className="w-full bg-sky-50 h-screen flex items-center justify-center">
       {loading && (<Spinner />)}
       <div className="bg-white w-full h-full lg:w-1/3 lg:h-4/5 flex flex-col items-center justify-center rounded-lg p-12">
+      <Link to='/'>
         <img src={logo} alt="" className="cursor-pointer w-16" />
+      </Link>
         <h1 className="text-2xl font-bold p-2 ">Login to your account</h1>
 
         <div className="w-full flex flex-col">
