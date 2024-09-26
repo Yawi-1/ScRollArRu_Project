@@ -107,7 +107,7 @@ export default function Navbar() {
           </div>
           <div className="mx-auto w-11/12 h-0" >
             {searchPrompt.map((searchedData) => (
-              <div className="relative w-full bg-white dark:bg-black p-2 z-50 border rounded-md" onClick={(event) => { setSearchText(searchedData.title), doSearch(event) }}>{searchedData.title}</div>
+              <div className="relative w-full bg-white dark:bg-black p-2 z-50 border rounded-md cursor-pointer hover:bg-slate-300" onClick={(event) => { setSearchText(searchedData.title), doSearch(event) }}>{searchedData.title}</div>
             ))}
           </div>
         </div>

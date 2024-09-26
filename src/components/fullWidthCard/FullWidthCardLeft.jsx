@@ -1,15 +1,16 @@
+ import imageUrl from '../../../public/carousal1.webp'
 // ---------------------------------- Full Width Card Left Side Component Code ----------------------------------
 export default function FullWidthCardLeft({ cardData }) {
 
   // ---------------------------------- Card Data ----------------------------------
-  const { imageUrl, title, description } = cardData;
+  const {  title, description } = cardData;
 
   return (
-    <div className="hover:scale-95 transition duration-200  w-full mt-4 mx-auto  flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 rounded-lg">
+    <div className=" w-full mt-4 mx-auto  flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 rounded-lg">
 
         {/* ---------------------------------- Image ---------------------------------- */ }
         <div className="md:w-2/5">
-          <img src={imageUrl} alt={title} className="w-full h-full object-cover md:rounded-l-lg rounded-t-lg" />
+          <img src={imageUrl} alt={title} className="hover:scale-105 transition duration-700  w-full h-full object-cover md:rounded-l-lg rounded-t-lg" />
         </div>
 
         {/* ---------------------------------- Text Description ---lg:max-w-screen-xl------------------------------- */ }
